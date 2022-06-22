@@ -1,0 +1,32 @@
+
+
+<div [id]="'tableData'">
+  <div [id]="['logout']"><button (click)="logout()" class="btn btn-info">注销</button></div>
+  <div [id]="['loginUser']">欢迎用户：<span>{{this.username}}</span></div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>姓名</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of this.users">
+        <input #usernameId type="hidden" value={{user.id}}>
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td><button class="btn btn-primary" (click)="detailFun(usernameId.value)">详情</button></td>
+        <!-- <td><button class="btn btn-primary" [routerLink]="['detail',itemId.value]">详情2</button></td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div [id]="['displayDetail']" *ngIf="this.user">
+  <span>用户id：</span>{{this.user.id}}
+  <span>用户名：</span>{{this.user.username}}
+  <span>用户年龄：</span>{{this.user.age}}
+  <span>用户邮箱：</span>{{this.user.email}}
+</div>
+

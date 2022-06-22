@@ -1,0 +1,13 @@
+#main{
+    margin: 100px auto;
+}
+
+#btnLogin{
+    width: 100px;
+    margin-left: 79%;
+    margin-top: -20px;
+
+}
+#registerSuccess{
+    display: none;
+}

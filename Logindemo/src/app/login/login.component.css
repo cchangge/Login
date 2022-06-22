@@ -1,0 +1,12 @@
+#main{
+    margin: 100px auto;
+}
+#btnRegister{
+    margin-left: 86%;
+}
+#alertLogin{
+    display: none;
+}
+#loginSuccess{
+    display: none;
+}

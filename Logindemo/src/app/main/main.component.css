@@ -1,0 +1,19 @@
+
+#tableData{
+    width: 500px;
+    margin: 50px auto;
+}
+#botTable{
+    margin-top: 200px;
+}   
+#logout{
+    float: left;
+}
+#loginUser{
+    width: 130px;
+    float:right;
+}
+#displayDetail{
+    width: 500px;
+    margin: 50px auto;
+}
